@@ -6,7 +6,7 @@ if (!function_exists("is_connected")) {
         if (session_status() === PHP_SESSION_NONE) {
             session_start();
         }
-        return !empty($_SESSION['admin']);
+        return !empty($_SESSION['user']);
     }
 }
 
@@ -25,5 +25,22 @@ if (!function_exists("create")) {
         return $response;
 
 }
+}
+
+
+//creation un function qui permet ajouter un mot a bdd
+if (!function_exists("ajouter_mot")) {
+    function ajouter_mot(string $wordname, string $definition):bool{
+         require './database/connexion.php';
+         $sql = 'INSERT INTO words (wordname, definition) VALUES (:wordname, :definition)';
+         $newword = $db->prepare($sql);
+         $newword->bindValue(":wordname", $wordname, PDO::PARAM_STR);
+         $newword->bindValue(":definition", $definition, PDO::PARAM_STR);
+         $response = $newword->execute();
+            return $response;
+
+}
+
+
 }
 ?>
