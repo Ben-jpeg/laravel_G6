@@ -1,3 +1,4 @@
+<?php $expression = false; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,29 +10,56 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+  <nav>
+    <a href="/lexique">Lexique</a>
+    <a href="/connexion">Connexion</a>
+    <a href="/enregistrement">Enregistrement</a>
+  </nav>
 
-
-<form method="POST" action="insert.php">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email</label>
-    <input type="email" name="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Email" required>
-    <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre email.</small>
-  </div>
-
-  <div class="form-group">
-    <label for="exampleInputPassword1">Pseudo</label>
-    <input type="text" name="pseudo" class="form-control" id="InputPseudo" placeholder="Pseudo" required>
-    </div>
-
-  <div class="form-group">
-    <label for="exampleInputPassword1">Mot de Passe</label>
-    <input type="password" name="motdepasse" class="form-control" id="InputPassword" placeholder="Mot de passe" required>
-  </div>
   
-  <button type="submit" class="btn btn-primary">Valider</button>
-</form>
+  <?php if ($expression == true): ?>
 
+    <!-- CAS PAGE 2 BLOCS -->
+    <!-- BLOC DE GAUCHE -->
+      <div id="bloc-gauche">
+        <h1>Ceci est un titre</h1>
+        <form method="POST" action="insert.php">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" name="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" required>
+            <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre email.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Pseudo</label>
+            <input type="text" name="pseudo" class="form-control" id="InputPseudo" required>
+            </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Mot de Passe</label>
+            <input type="password" name="motdepasse" class="form-control" id="InputPassword" required>
+          </div>
+        
+          <div id="button-group">
+            <button type="submit" class="btn btn-primary rounded-0">Valider</button> <button class="btn rounded-0">S'enregistrer</button>
+          </div>
+        </form>
+      </div>
 
-    
+    <!-- BLOC DE DROITE -->
+      <div id="bloc-droite">
+        <img src="./img/velo.png" alt="Cycliste">
+      </div>
+    <!-- FIN CAS PAGE 2 BLOCS -->
+  <?php else: ?>
+ 
+
+  <div id="bloc-centre">
+    <img src="./img/velo.png" alt="Cycliste">
+    <h1>Lexique</h1>
+    <h3>Mot 1</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nostrum, ex iure id, suscipit ea cupiditate animi explicabo porro rerum dolores inventore, veritatis corrupti a nulla quasi eius incidunt! Dolores.</p>
+    <h3>Mot 2</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptate tempora nisi recusandae, quaerat magni eaque rerum consequatur dolor iusto explicabo accusamus porro animi veritatis hic quisquam fugit vel repellat!</p>
+  </div>
+  <?php endif; ?>
 </body>
 </html>
