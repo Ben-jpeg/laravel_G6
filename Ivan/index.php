@@ -46,8 +46,8 @@
     
   
     <?php
-    require './database/connexion_bdd.php';
-    require './config/affichemot.php';
+    require '../database/connexion_bdd.php';
+    require '../config/affichemot.php';
 
     ?>
   

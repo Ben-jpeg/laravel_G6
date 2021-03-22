@@ -1,4 +1,4 @@
-<?php require './components/header.php' ?>
+<?php require '../components/header.php' ?>
 <body>
 
 <h1>Inscrivez vous</h1>
@@ -27,4 +27,4 @@
 <button><a href = 'deconnexion.php'>Retour à l'accueil</a></button>
 
 
-<?php require './components/footer.php' ?>
+<?php require '../components/footer.php' ?>

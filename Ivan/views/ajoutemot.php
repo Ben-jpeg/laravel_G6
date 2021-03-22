@@ -1,4 +1,4 @@
-<?php require './components/header.php' ?>
+<?php require '../components/header.php' ?>
 <body>
 
 <h1> Enregistrez un nouveau mot <br/>
@@ -24,4 +24,4 @@
 <button><a href = 'deconnexion.php'>Voir la page Lexique</a></button>
 <br/>
 
-<?php require './components/footer.php' ?>
+<?php require '../components/footer.php' ?>
