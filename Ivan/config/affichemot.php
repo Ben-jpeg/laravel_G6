@@ -1,6 +1,6 @@
 <?php
 
-require '../database/connexion_bdd.php';
+require './database/connexion_bdd.php';
 
 $reponse = $bdd->query('SELECT wordname, definition FROM words ORDER BY ID DESC');
 

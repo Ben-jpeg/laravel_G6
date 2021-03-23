@@ -23,7 +23,7 @@ try {
     $bdd->exec($sql);
     echo " Merci de t'être inscrit";
     
-    header('Location: page_connexion.php');
+    header('Location: ../views/page_connexion.php');
     
     
   }

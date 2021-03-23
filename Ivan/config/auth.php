@@ -33,7 +33,7 @@ if(password_verify($password, $user['password'])){
         session_start();
         $_SESSION['admin'] = $pseudo;
         echo " Bienvenue $pseudo, tu es connecté ";
-        header('Location: ajoutemot.php');
+        header('Location: ../views/ajoutemot.php');
         
   
     }
