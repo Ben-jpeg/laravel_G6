@@ -1,9 +1,9 @@
-<?php require '../components/header.php' ?>
+<?php  require '../components/header.php' ?>
 <body>
 
 <h1> Connectez vous</h1>
 
-<form method="POST" action="../config/auth.php">
+<form method="POST" action="auth.php">
   
 
   <div class="form-group">
@@ -21,4 +21,4 @@
 
 <button><a href = 'deconnexion.php'>Revenir vers l'accueil</a></button>
 
-<?php require '../components/footer.php' ?>
+<?php  require '../components/footer.php' ?>

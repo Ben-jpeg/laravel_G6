@@ -1,7 +1,7 @@
 <?php
 
 
-require '../database/connexion_bdd.php';
+require 'connexion_bdd.php';
 
     $email =  addslashes($_POST['email']);
     
@@ -23,7 +23,7 @@ try {
     $bdd->exec($sql);
     echo " Merci de t'être inscrit";
     
-    header('Location: ../views/page_connexion.php');
+    header('Location: page_connexion.php');
     
     
   }

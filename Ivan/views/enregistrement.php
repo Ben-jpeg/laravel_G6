@@ -1,9 +1,9 @@
-<?php require '../components/header.php' ?>
+<?php  require '../components/header.php' ?>
 <body>
 
 <h1>Inscrivez vous</h1>
 
-<form method="POST" action="../config/insert.php">
+<form method="POST" action="insert.php">
   <div class="form-group">
     <label for="exampleInputEmail1">Email</label>
     <input type="email" name="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Email" required>
@@ -27,4 +27,5 @@
 <button><a href = 'deconnexion.php'>Retour à l'accueil</a></button>
 
 
-<?php require '../components/footer.php' ?>
+
+<?php  require '../components/footer.php' ?>

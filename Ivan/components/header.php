@@ -11,6 +11,7 @@
 <body>
   <nav>
     <a href="../">Lexique</a>
+    <a href="../views/quiz.php">Quiz</a>
     <a href="../views/page_connexion.php">Connexion</a>
     <a href="../views/enregistrement.php">Enregistrement</a>
   </nav>
